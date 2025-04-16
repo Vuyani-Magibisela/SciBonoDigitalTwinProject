@@ -1,0 +1,10 @@
+# Prevent directory listing
+Options -Indexes
+
+# Enable rewrite engine
+RewriteEngine On
+
+#Redirect everything to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

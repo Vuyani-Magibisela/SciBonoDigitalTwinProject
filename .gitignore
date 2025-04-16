@@ -1,0 +1,31 @@
+# PHP Project Base Exclusions
+
+# Node.js dependencies
+node_modules/
+
+# Composer vendor directory
+vendor/
+
+# Log and temporary files
+/storage/logs/
+/storage/cache/
+/storage/backups/
+
+# Uploaded media content
+/public/assets/media/
+/admin/uploads/
+
+# OS/filesystem specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE metadata
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# Backup scripts and system files
+/scripts/backup.sh
+/storage/media/
